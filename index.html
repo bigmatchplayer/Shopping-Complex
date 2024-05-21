@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body>
+
+    <section class="header" >
+        <div class="image">
+        <img src="/Assests/logo.png.webp" alt="">
+        </div>
+
+        <ul>
+            <li><a href="/Home">Home</a>
+            <hr style="background-color: red;height: 3px; width: 0; border: none;"></li>
+
+            <li><a href="#shop">Shop</a><hr></li>
+            <li><a href="/Pages">Pages</a><hr></li>
+            <li><a href="/Blog">Blog</a><hr></li>
+            <li><a href="/Contacts">Contacts</a><hr></li>
+        </ul>
+        
+        <div class="icons">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-bookmark-heart"></i>
+            <i class="bi bi-bag-fill"></i>
+        </div>
+
+    </section>
+
+    <section class="home">
+        <div>
+        <h6 style="vertical-align: inherit;">Summer Collection</h6>
+         
+        <h2>Fall - Winter <br>Collections 2030</h2>
+        <p> A specialist label creating luxury essentials. Ethically crafted with an <br> unwaveering commitment to execptional quality.</p>
+         
+        <button>SHOP NOW -></button>
+    </div>
+    </section>
+
+    <section class="shop">
+
+        <div class="nav">
+            <h2>Best Sellers</h2>
+            <h2>New Arrivals</h2>
+            <h2>Hot Sales</h2>
+        </div>
+        
+        <!-- filter button -->
+        <div class="filter_button">   
+            <button class="active"  data-name="all">Show all</button>
+            <button data-name="phones">Phones</button>
+            <button data-name="clothes">Clothes</button>
+            <button data-name="shoes">Shoes</button>
+            
+        </div>
+
+      <!-- search -->
+        <div class="search">
+            <input type="search" id="search-item" placeholder="Search items..." onkeyup="search()">
+            <button type="submit">Search</button>
+
+        </div>
+
+
+
+        <!-- sorting -->
+        <div class="sort">
+            <select name="Sorting" id="select">
+                <option value="">Default</option>
+                <option value="">High-Low</option>
+                <option value="">Low-High</option>
+            </select>
+        </div>
+
+
+     
+
+        <!-- cards -->
+
+        <div class="cont">
+            <ul id="products" class="filter_card">
+             
+              <li class="card" data-name="phones" data-price="200">
+                  <img src="/Assests/phone-1.jpg" alt="">
+                  <div class="card_body">
+                   <h6 class="card_tittle">I Phone</h6>
+                   <p class="card_text">Lorem ipsusn doloar...</p>
+                   <h4 id="price">$200.8</h4>
+                  </div>
+               </li>   
+               <li class="card" data-name="shoes" data-price="150">
+                  <img src="/Assests/shoe-1.jpg" alt="">
+                  <div class="card_body">
+                   <h6 class="card_tittle">shoes</h6>
+                   <p class="card_text">Lorem ipsusn doloar...</p>
+                   <h4 id="price">$150.8</h4>
+                  </div>
+               </li>
+               <li class="card" data-name="shoes" data-price="20.8">
+                  <img src="/Assests/shoe-2.jpg" alt="">
+                  <div class="card_body">
+                   <h6 class="card_tittle">Shoes</h6>
+                   <p class="card_text">Lorem ipsusn doloar...</p>
+                   <h4 id="price">$20.8</h4>
+                  </div>
+               </li>
+               <li class="card" data-name="clothes" data-price="712">
+                  <img src="/Assests/cloth-2.jpg" alt="">
+                  <div class="card_body">
+                   <h6 class="card_tittle">clothes</h6>
+                   <p class="card_text">Lorem ipsusn doloar...</p>
+                   <h4 id="price">$712</h4>
+                  </div>
+               </li>
+               <li class="card" data-name="clothes" data-price="872">
+                <img src="/Assests/cloth-2.jpg" alt="">
+                <div class="card_body">
+                 <h6 class="card_tittle">clothes</h6>
+                 <p class="card_text">Lorem ipsusn doloar...</p>
+                 <h4 id="price">$872</h4>
+                </div>
+             </li>
+             <li class="card" data-name="phones" data-price="12.8">
+                <img src="/Assests/phone-1.jpg" alt="">
+                <div class="card_body">
+                 <h6 class="card_tittle">phones</h6>
+                 <p class="card_text">Lorem ipsusn doloar...</p>
+                 <h4 id="price">$12.8</h4>
+                </div>
+             </li>
+             <li class="card" data-name="clothes" data-price="890" data->
+                <img src="/Assests/cloth-3.jpg" alt="">
+                <div class="card_body">
+                 <h6 class="card_tittle">Clothes</h6>
+                 <p class="card_text">Lorem ipsusn doloar...</p>
+                 <h4 id="price">$890</h4>
+                </div>
+             </li>
+          
+           </ul>
+
+
+    </section>
+
+    <section class="offer" style="position: relative;">
+
+        <div class="box"></div>
+
+        <div class="headings">
+            <h2>Clothings Hot</h2>
+            <br>
+            <span> Shoe Collection</span>
+            <br>
+            <h2>Accessories</h2>
+        </div>
+        
+        <div class="middle">
+            <div>
+                <img src="Assests/product-sale.png.webp" alt="">
+                 <p>Sale of</p>
+                  <h3>$29.99</h3></div>
+          </div>
+        <div class="last">
+            <span style="text-transform: uppercase;">Deal of the week</span>
+            <h2>Multi-pocket Chest <br>Bag Black</h2>
+
+            <h1 id="demo">29 : 13 : 09 : 16</h1>
+            <h4>Days   Hours    Minutes    Seconds</h4>
+
+            <button id="btn">SHOP NOW</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+
+        <div class="first">
+            <div class="logo">
+                <img src="./Assests/footer-logo.png.webp" alt="logo">
+            </div>
+
+            <p>The customer is at the heart of our unique business model, which includes design.</p>
+            <img src="./Assests/payment.png.webp" alt="">
+        </div>
+        <div class="second">
+            <h6>SHOPPING</h6>
+            <a href="">Clothing Store</a>
+            <a href="">Trending Shoes</a>
+            <a href="">Accessories</a>
+            <a href="">Sale</a>
+        </div>
+
+        <div class="third">
+            <h6>SHOPPING</h6>
+            <a href="">CONTACT US</a>
+            <a href="">PAYMENT METHOD</a>
+            <a href="">DELIVERY</a>
+            <a href="">RETURN & EXCHANGES</a>
+        </div>
+
+        <div class="forth">
+            <h6>NEWLETTER</h6>
+            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+            <input type="email" placeholder="Your email" ><i class="bi bi-envelope"></i>
+             <hr style="width: 260px; background-color: white;">
+        </div>
+        </div>
+
+        <hr style="width: 1200px; height: 2px; background-color: whitesmoke;position: absolute;bottom: 5rem;left: 8rem;">
+              <p style="position: absolute;bottom: 0.5rem;right: 450px;
+              display: inline;">Copyright © 20242020 All rights reserved | This template is made with 
+                <i style="color: red;" class="bi bi-heart"></i>  by <a style="color: red ;" href="">Colorlib</a></p>
+    </footer>
+   
+</body>
+
+<script src="index.js"></script>
+<script src="searchengin.js"></script>
+<script src="timer.js"></script>
+
+</html>
